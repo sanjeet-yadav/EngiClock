@@ -52,12 +52,12 @@ const Orders = () => {
                         <td>{o?.payment.success ? "Success" : "Failed"}</td>
                         <td>{o?.products?.length}</td>
                       </tr>
-                    </tbody>
+                    </tbody> 
                   </table>
                   <div className="container">
                     {o?.products?.map((p, i) => (
-                      <div className="row mb-2 p-3 card flex-row" key={p._id}>
-                        <div className="col-md-4">
+                      <div className="mb-2 p-3 card flex-row" key={p._id}>
+                        <div className="col-md-4 cartImg">
                           <img
                             src={`/api/v1/product/product-photo/${p._id}`}
                             className="card-img-top"
@@ -69,7 +69,7 @@ const Orders = () => {
                         <div className="col-md-8">
                           <p>{p.name}</p>
                           <p>{p.description.substring(0, 30)}</p>
-                          <p>Price : {p.price}</p>
+                          <p>Price : ₹{p.price}</p>
                         </div>
                       </div>
                     ))}

@@ -27,3 +27,11 @@
   text-align: center;
   /* margin-top: -140px !important; */
 }
+
+.cartImg{
+  --bs-gutter-x: 9.5rem;
+}
+.cartImg img{
+ width: 68%;
+ height: 9.2rem;
+}

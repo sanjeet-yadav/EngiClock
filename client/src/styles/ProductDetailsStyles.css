@@ -14,8 +14,11 @@
 }
 .row {
   --bs-gutter-x: 6.5rem;
+  
 }
-
+.pdImg img{
+  height: 23.5rem;
+}
 .similar-products .card {
   background-color: rgba(128, 128, 128, 0.097);
   width: 18rem;
